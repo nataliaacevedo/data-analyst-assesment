@@ -13,3 +13,5 @@ for Ghost's take-home challenge.
 - `docs/`         – PDF with screenshots & explanations
 - `img/`          – PNG snippets used in the PDF
 
+
+
