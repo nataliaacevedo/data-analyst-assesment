@@ -1,0 +1,54 @@
+Table sales_reps {
+  rep_id int [pk]
+  rep_name varchar
+  team varchar
+  region varchar
+  hire_date date
+  status varchar
+}
+
+Table buyers {
+  buyer_id int [pk]
+  rep_id int [ref: > sales_reps.rep_id]
+  created_date date
+  last_purchase_date date
+  last_contact_date date
+  last_note_date date
+  has_post_sales_deal bool
+  transaction_count int
+}
+
+Table deals {
+  deal_id int [pk]
+  buyer_id int [ref: > buyers.buyer_id]
+  entered_buyer_interested date
+  entered_offer_submitted date
+  status varchar
+  compliant_flag bool
+}
+
+Table wishlist_updates {
+  buyer_id int [pk, ref: > buyers.buyer_id]
+  wishlist_filled bool
+  latest_update_date date
+}
+
+Table am_shares {
+  share_id int [pk]
+  buyer_id int [ref: > buyers.buyer_id]
+  rep_id int [ref: > sales_reps.rep_id]
+  share_date date
+}
+
+Table communications {
+  comm_id int [pk]
+  buyer_id int [ref: > buyers.buyer_id]
+  rep_id int [ref: > sales_reps.rep_id]
+  comm_type varchar
+  comm_timestamp datetime
+  note_timestamp datetime
+  responded_within_sla bool
+}
+
+
+Ref: "communications"."buyer_id" < "communications"."rep_id"

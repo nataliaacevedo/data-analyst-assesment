@@ -1,0 +1,16 @@
+rep_id,rep_name,team,region,hire_date,status
+1,Rep_01,Gamma,Central,2022-08-18,active
+2,Rep_02,Alpha,South,2023-06-25,active
+3,Rep_03,Beta,South,2021-10-11,active
+4,Rep_04,Beta,Central,2021-12-06,active
+5,Rep_05,Beta,South,2021-09-17,active
+6,Rep_06,Alpha,South,2021-10-29,active
+7,Rep_07,Alpha,South,2021-09-21,active
+8,Rep_08,Gamma,South,2023-11-09,active
+9,Rep_09,Beta,East,2023-11-25,active
+10,Rep_10,Gamma,West,2021-05-23,active
+11,Rep_11,Beta,North,2021-08-24,active
+12,Rep_12,Beta,East,2022-03-17,active
+13,Rep_13,Alpha,West,2021-01-20,active
+14,Rep_14,Alpha,South,2022-11-17,active
+15,Rep_15,Gamma,South,2022-12-28,active
